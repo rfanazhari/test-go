@@ -1,0 +1,16 @@
+1) How does Go handle error handling? What are some best practices for error handling in Go?
+In go, error handling is explicit and encourages a pattern where functions return an error to value to indicate success or failure.
+2) What are Go interfaces? How do they differ from classes in other object-oriented languages?
+An interfaces is a type that specifies a set of method signatures. Unlike traditional OOP languages, go doesn’t have classes. Instead, it uses interfaces to archive polymorphism. Also go doesn’t have inheritence.
+3) Create a Go program that reads a JSON file, modifies some values, and then writes the modified JSON back to the file. The JSON file has the following structure:
+{
+"name": "John Doe",
+"email": "john.doe@example.com",
+"age": 30
+}
+The program should change the `email` field to `johndoe@example.com` and increment the `age` by 1. Please use only Go standard library.
+4) Create a Go program that implements a simple HTTP server. The server should have two endpoints:
+a. `GET /items`: This should return a list of items. Each item should have an ID and a name.
+b. `POST /items`: This should accept a new item (with a name) and add it to the list. The server should assign an ID to new items. Please use only Go standard library.
+5) Implement a Go program that communicates with a SQL database. The program should be able to execute basic CRUD operations.
+
