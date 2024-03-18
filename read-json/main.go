@@ -3,7 +3,6 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/bxcodec/faker/v3"
 	"io/ioutil"
 	"log"
 	"os"
@@ -38,9 +37,9 @@ func main() {
 
 	newAge := data.Age + 1 // this should be for age
 	newData := StructJson{
-		Name:  faker.Name(),
+		Name:  data.Name,
 		Age:   newAge,
-		Email: faker.Name(),
+		Email: "johndoe@example.com",
 	}
 
 	log.Println("REWRITE DATA OF FILE")
