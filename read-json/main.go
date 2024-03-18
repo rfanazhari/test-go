@@ -36,9 +36,10 @@ func main() {
 	log.Println(fmt.Sprintf("Email : %s", data.Email))
 	log.Println(fmt.Sprintf("Age : %d", data.Age))
 
+	newAge := data.Age + 1 // this should be for age
 	newData := StructJson{
 		Name:  faker.Name(),
-		Age:   len(faker.Name()),
+		Age:   newAge,
 		Email: faker.Name(),
 	}
 
